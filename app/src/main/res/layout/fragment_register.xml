@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.register.RegisterFragment">
+
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/register_img"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+
+    <View
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="180dp"
+        android:background="#28000000"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"/>
+
+    <TextView
+        android:textStyle="bold"
+        android:textColor="#4C00FF"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="20dp"
+        android:text="Love Calculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="First Name"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:paddingStart="10dp"
+        android:background="@drawable/register_edit_text"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="You"
+        android:id="@+id/first_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="310dp"
+        android:layout_width="380dp"
+        android:layout_height="40dp"/>
+
+    <TextView
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="Second Name"
+        android:layout_marginTop="380dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:background="@drawable/register_edit_text"
+        android:paddingStart="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:textStyle="normal"
+        android:text="Me"
+        android:id="@+id/second_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="410dp"
+        android:layout_width="380dp"
+        android:layout_height="40dp"/>
+
+    <Button
+        android:id="@+id/calculate"
+        android:backgroundTint="#4C00FF"
+        android:text="Calculate"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="470dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:textSize="13sp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_home"
+        app:layout_constraintStart_toStartOf="@id/btn_home"
+        app:layout_constraintTop_toTopOf="@id/btn_home"
+        android:text="Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="History"
+        android:textSize="13sp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_history"
+        app:layout_constraintStart_toStartOf="@id/btn_history"
+        app:layout_constraintTop_toTopOf="@id/btn_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_home"
+        app:layout_constraintTop_toTopOf="@id/btn_home"
+        app:layout_constraintStart_toStartOf="@id/btn_home"
+        android:src="@drawable/heart"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+    <ImageView
+        app:layout_constraintTop_toTopOf="@id/btn_history"
+        app:layout_constraintStart_toStartOf="@id/btn_history"
+        app:layout_constraintEnd_toEndOf="@id/btn_history"
+        android:src="@drawable/history"
+        android:layout_marginTop="4dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"/>
+
+    <Button
+        android:id="@+id/btn_home"
+        android:backgroundTint="#00000000"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:id="@+id/btn_history"
+        android:backgroundTint="#00000000"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
