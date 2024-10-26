@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -42,6 +44,10 @@ android {
 var nav_version = "2.8.0"
 
 dependencies {
+    kapt(libs.hilt.android.compiler)
+    implementation(libs.hilt.android)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
     implementation("androidx.navigation:navigation-fragment:$nav_version")
     implementation("androidx.navigation:navigation-ui:$nav_version")
     implementation(libs.androidx.core.ktx)
